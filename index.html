@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Game</title>
+</head>
+<body onload="init()">
+    <main>
+        <div id="welcomeScreen">
+            <h2>Guess The Random Number Between 1-20</h2>
+            <img class="image" src="./undraw_gaming_re_cma2.svg" alt="logo">
+            <section class="eventSection">
+                <p>Select The Difficulty</p>
+                <div class="button-wrapper">
+                    <button onclick="easyMode()">EASY: 10 Attempts</button>
+                    <button onclick="hardMode()">HARD: 5 Attempts</button>
+                </div>
+            </section>
+        </div>
+        <!-- Our Game Actual Area -->
+        <div id="gameArea">
+            <div id="newGameArea">
+                <button onclick="newGameBegin()">New Game</button>
+            </div>
+            <section>
+                <h3 id="textOutput">Your Guess</h3>
+                <input type="number" name="" id="inputBox" min="1" max="20" placeholder="Enter your number" onchange="compareGuess()"/>
+            </section>
+
+            <section class="stats">
+                <div class="info">
+                    <p>Number of previous attemts</p>
+                    <span id="attempts">0</span>
+                </div>
+                <div class="info">
+                    <p>Number of previous guesses</p>
+                    <span id="guesses">0</span>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+    <script src="./audio/decidemp3.mp3"></script>
+</body>
+</html>
