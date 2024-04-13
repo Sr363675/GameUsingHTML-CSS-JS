@@ -6,7 +6,7 @@
   }
 
   :root{
-    --dark:#227976;
+    --dark:#d5d5d5;
     --background:#d8d0c0;
   }
   html{
@@ -20,7 +20,7 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    background-color: #16bddb;
+    background-color: #228ea9;
 
   }
   main{
@@ -121,7 +121,7 @@
      }
      .info span{
       font-size: 2rem;
-      color: #ff0511;
+      color: #ff0505;
      }
 
   /*  for responsive */
